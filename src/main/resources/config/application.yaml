@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: account
+    description: ${spring.application.name} is a application for user registration and login
+  data:
+    mongodb:
+      authentication-database: admin
+      database: hit-counter
+      port: 27017
+      host: localhost
+
+
+server:
+  servlet:
+    context-path: /${spring.application.name}
+
+
